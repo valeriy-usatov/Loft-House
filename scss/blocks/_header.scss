@@ -1,0 +1,130 @@
+.header {
+    padding: 30px 0 74px;
+//   min-height: 840px;
+  background: linear-gradient(
+      180deg,
+      #242b33 0%,
+      rgba(36, 43, 51, 0) 0.01%,
+      #242b33 100%
+    ),
+    url("./../images/header/header-bg.jpg");
+    
+}
+.header__top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header__top-row-mobile {
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $dark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 60px;
+    justify-content: flex-start;
+    padding: 40px 0 50px;
+
+    .header__nav {
+        display: block;
+    }
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    .header__nav-btn {
+        position: fixed;
+        top: 50px;
+        right: 15px;
+    
+    }
+
+}
+
+
+
+.header__nav {
+    @media (max-width:999px) {
+        display: none;
+}
+
+}
+.header__nav-btn {
+    display: none;
+
+    @media (max-width:999px) {
+            display: block;
+    }
+}
+.header__title {
+    margin-top: 225px;
+    color: $accent;
+    text-align: center;
+    font-family: $font-acsent;
+    font-size: 48px;
+    font-weight: 700;
+
+    @media (max-width:999px) {
+        margin-top: clamp(50px, -2.03rem + 25.77vw, 225px);
+        font-size: clamp(30px, 1.345rem + 2.65vw, 48px);
+}
+
+}
+.header__title-icon {
+    display: block;
+    margin-top: 81px;
+    text-align: center;
+
+    @media (max-width:999px) {
+        margin-top: clamp(41px, 1.322rem + 5.89vw, 80px);
+        
+    }
+}
+.header__footer {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 98px;
+
+    @media (max-width:999px) {
+        gap:clamp(50px, 1.711rem + 7.07vw, 98px);
+        margin-top: clamp(40px, 0.546rem + 19.15vw, 200px);
+    }
+
+    @media (max-width:550px) {
+        flex-direction: column;
+        gap:20px;
+        justify-content:center;
+        align-items:center;
+        
+    }
+
+
+}
+
+.header__footer-address,
+.header__footer-phone   {
+    display: flex;
+    gap: 14px;
+    font-family: Raleway;
+    font-size: 18px;
+}
+.header__footer-address-link {
+}
+.header__footer-address-text {
+}
+.header__footer-phone {
+}
+.header__footer-phone-link {
+}
+.header__footer-phone-text {
+}

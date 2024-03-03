@@ -1,0 +1,46 @@
+.cta {
+  padding: 180px 0;
+  background: linear-gradient(
+      180deg,
+      #242b33 10.42%,
+      rgba(36, 43, 51, 0) 50.52%,
+      #242b33 90.1%
+    ),
+    linear-gradient(0deg, rgba(36, 43, 51, 0.9) 0%, rgba(36, 43, 51, 0.9) 100%),
+    url("./../images/cta/cta-bg.jpg"), #c4c4c4;
+
+	@media(max-width:1100px) {
+		padding: (clamp(60px, 0.673rem + 15.38vw, 180px)) 0;
+	  }
+}
+
+.cta__title {
+  margin-bottom: 18px;
+}
+.title-2 {
+}
+.cta__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr;
+  }
+}
+.cta__text {
+  line-height: 24px;
+
+  p + p {
+    margin-top: 1em;
+  }
+}
+.cta__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px 30px;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
+}
